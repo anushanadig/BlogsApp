@@ -1,0 +1,38 @@
+body {
+  background-color: #282b2a;
+  padding: 24px 0;
+  font-family: "Quicksand", sans-serif;
+}
+
+#item-container {
+  margin: 0 auto;
+  max-width: 50vw;
+}
+
+#item-header {
+  color: #ffa7c4;
+  font-size: 1.75rem;
+  margin-bottom: 0.4375rem;
+}
+
+#item-header:hover {
+  color: #ef79a0;
+}
+
+#item-body {
+  color: white;
+  margin-bottom: 2em;
+}
+
+#title {
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 0.5em;
+}
+
+.built-with {
+  font-size: 1.4em;
+  color: white;
+  margin-bottom: 3em;
+  font-style: italic;
+}

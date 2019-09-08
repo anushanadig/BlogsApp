@@ -11,14 +11,10 @@ class PostsList extends React.Component {
     return this.props.posts.map(post => {
       return (
         <div className="item" key={post.id}>
-          <i className="large middle aligned icon user" />
           <div className="content">
             <div className="description">
-              <h2>{post.title}</h2>
-              <p>{post.body}</p>
-            </div>
-            <div>
-              <UserHeader userId={post.userId} />
+              <h2 id="item-header">{post.title}</h2>
+              <p id="item-body">{post.body}</p>
             </div>
           </div>
         </div>
@@ -27,8 +23,15 @@ class PostsList extends React.Component {
   }
 
   render() {
-    // console.log(this.props.posts);
-    return <div className="ui relaxed divided list">{this.renderList()}</div>;
+    return (
+      <div className="ui relaxed divided list" id="item-container">
+        <h3 id="title">Anusha's Blog</h3>
+        <p className="built-with">
+          Built with React, Redux, Semantic UI, and some plain old CSS.
+        </p>
+        {this.renderList()}
+      </div>
+    );
   }
 }
 
