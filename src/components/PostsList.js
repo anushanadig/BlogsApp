@@ -1,7 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
 import { fetchPostsAndusers } from "../actions";
-import UserHeader from "./UserHeader";
 
 class PostsList extends React.Component {
   componentDidMount() {
@@ -12,10 +11,8 @@ class PostsList extends React.Component {
       return (
         <div className="item" key={post.id}>
           <div className="content">
-            <div className="description">
-              <h2 id="item-header">{post.title}</h2>
-              <p id="item-body">{post.body}</p>
-            </div>
+            <h2 className="item-header">{post.title}</h2>
+            <p className="item-body">{post.body}</p>
           </div>
         </div>
       );
@@ -24,10 +21,10 @@ class PostsList extends React.Component {
 
   render() {
     return (
-      <div className="ui relaxed divided list" id="item-container">
-        <h3 id="title">Anusha's Blog</h3>
+      <div className="item-container">
+        <h3 className="title">Anusha's Blog</h3>
         <p className="built-with">
-          Built with React, Redux, Semantic UI, and some plain old CSS.
+          Built with React, Redux, and some plain old CSS.
         </p>
         {this.renderList()}
       </div>

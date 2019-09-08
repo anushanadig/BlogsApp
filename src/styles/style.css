@@ -4,27 +4,28 @@ body {
   font-family: "Quicksand", sans-serif;
 }
 
-#item-container {
+.item-container {
   margin: 0 auto;
   max-width: 50vw;
 }
 
-#item-header {
+.item-header {
   color: #ffa7c4;
   font-size: 1.75rem;
+  font-weight: bold;
   margin-bottom: 0.4375rem;
 }
 
-#item-header:hover {
+.item-header:hover {
   color: #ef79a0;
 }
 
-#item-body {
+.item-body {
   color: white;
   margin-bottom: 2em;
 }
 
-#title {
+.title {
   color: white;
   font-size: 3rem;
   margin-bottom: 0.5em;
